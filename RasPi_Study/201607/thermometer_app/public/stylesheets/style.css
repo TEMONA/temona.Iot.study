@@ -1,0 +1,17 @@
+.chart-container2,.chart-container3{
+  position: relative;
+  left: -50%;
+  float:left;
+  padding: 8px
+}
+#myThm_tag,#myHyg_tag,.data_tag{
+  text-align:center;
+  font-size:1.2em;
+}
+#server_url{
+  display: none;
+}
+[data-role="content"]{
+  //position: relative;
+  //overflow: hidden;
+}

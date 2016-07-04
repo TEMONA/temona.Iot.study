@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <title><%=title %></title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="javascripts/fusioncharts/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="javascripts/fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/javascripts/chart.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <a id="server_url"><%= server_url %></a>
+    <div data-role="page" id="page_one">
+      <div data-role="header" data-theme="b">
+        <!--<a href="#page_two" data-role="button" data-icon="search">変化図</a>-->
+        <a href="#" data-icon="home">トップ</a>
+        <h1><%=title %></h1>
+        <% //console.log("Connected!") %>
+        <a href="#page_two" data-role="button" data-icon="search">詳細</a>
+      </div>
+
+      <div data-role="content" >
+          <div style="float: left;position: relative;left: 50%;">
+            <div class="chart-container2" >
+              <div id="chart-container2" >温度計</div>
+              <div class="data_tag" id="myThm_tag" ></div>
+            </div>
+            <div class="chart-container3" >
+              <div id="chart-container3" >湿度計</div>
+              <div class="data_tag" id="myHyg_tag" >chart-container3_tag</div>
+            </div>
+          </div>
+        </div>
+
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h1>页脚文本</h1>
+      </div>
+    </div>
+
+    <div data-role="page" id="page_two">
+      <div data-role="header" data-theme="b">
+        <a href="#page_one" data-icon="home">トップ</a>
+        <h1><%=title %></h1>
+        <a href="#page_two" data-role="button" data-icon="search">詳細</a>
+      </div>
+
+      <div data-role="content" >
+          <div style="float: left;position: relative;left: 50%;">
+            <div class="chart-container3" >
+              <div id="chart-container4" >Demo graph</div>
+              <div class="data_tag" id="chart_tag" >chart-container3_tag</div>
+            </div>
+          </div>
+        </div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+        <h1>页脚文本</h1>
+      </div>
+    </div>
+
+  </body>
+</html>
