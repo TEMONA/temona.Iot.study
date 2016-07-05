@@ -13,7 +13,7 @@ sudo apt-get install python-smbus
 
 ### テストプログラムの起動
 ```
-cd ~/RasPi_Study/201607/hdc1000/
+cd ~/temona.iot.study/RasPi_Study/201607/hdc1000/
 python hdc1000.py
 ```
 
@@ -33,7 +33,7 @@ source ~/.nvm/nvm.sh
 
 ### Node.jsモジュールのインストール
 ```
-cd ~/RasPi_Study/201607/thermometer_app
+cd ~/temona.iot.study/RasPi_Study/201607/thermometer_app
 npm install
 ```
 
