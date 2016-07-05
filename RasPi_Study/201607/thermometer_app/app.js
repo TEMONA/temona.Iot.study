@@ -6,7 +6,7 @@ var event = new EventEmitter();
 
 
 var app = express();
-var port = 3031
+var port = process.argv[2] || 3030
 
 
 app.set('view engine', 'ejs');
@@ -80,7 +80,7 @@ setInterval(function () {
 
 app.get('/', function (req, res) {
   res.render('index', {
-    title: 'Express Sample',
+    title: 'Online Thermo-Hygrometer',
     server_url: server_url
  });
 });
